@@ -29,6 +29,9 @@ export const env = createEnv({
       process.env.VERCEL ? z.string() : z.string().url(),
     ),
     DATABASE_BACKUP_YEAR: z.string(),
+
+    EMAIL_SERVER: z.string(),
+    EMAIL_FROM: z.string(),
   },
 
   /**
@@ -50,6 +53,8 @@ export const env = createEnv({
     NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
     DATABASE_BACKUP_YEAR: process.env.DATABASE_BACKUP_YEAR,
+    EMAIL_SERVER: process.env.EMAIL_SERVER,
+    EMAIL_FROM: process.env.EMAIL_FROM,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation. This is especially
