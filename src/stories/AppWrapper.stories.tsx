@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { AppWrapper } from "./AppWrapper";
+import { BannerText } from "./BannerText";
 
 const meta: Meta<typeof AppWrapper> = {
   title: "AppWrapper",
@@ -16,5 +17,10 @@ export const Component: Story = {
   args: {
     overlayLogo: true,
     visibile: true,
+    children: (
+      <div className="mt-24">
+        <BannerText />
+      </div>
+    ),
   },
 };
