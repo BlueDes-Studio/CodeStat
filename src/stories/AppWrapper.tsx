@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from "react";
 import { Branding } from "./Branding";
-import Button from "./Button";
+
 
 export interface AppWrapperProps {
   /**
@@ -33,7 +33,6 @@ export const AppWrapper: React.FC<Props> = ({
       <div className="absolute left-0 top-0 h-screen w-screen">
         <div className="px-5 pt-4">
           <Branding scale={75} />
-          <Button/>
           <div className="ml-4">{children}</div>
         </div>
       </div>
