@@ -1,6 +1,7 @@
 import React, { PropsWithChildren } from "react";
 import { Branding } from "./Branding";
 
+
 export interface AppWrapperProps {
   /**
    * overlays the app logo on the background
